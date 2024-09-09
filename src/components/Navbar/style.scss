@@ -1,0 +1,41 @@
+.navbar, .pages, .buttons {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    opacity: 1;
+    background-color: rgba(248,249,250);
+    column-gap: 240px;
+    justify-content: center;
+}
+
+.page {
+    &__link {
+        color: rgba(0, 0, 0, .5);
+        text-decoration: none;
+    }
+}
+
+.btn {
+    padding: 8px 15px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 17px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+    
+    &:hover {
+        color: white;
+        background-color: black;
+    }
+}
+
+.active {
+    color: black;
+}
